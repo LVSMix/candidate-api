@@ -1,0 +1,197 @@
+{
+	"info": {
+		"_postman_id": "bcb4efcb-506e-4f9d-9bc1-dc55ceaea5e9",
+		"name": "Reto-Seek",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1081095"
+	},
+	"item": [
+		{
+			"name": "getAllCandidates",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzZWVraWQiLCJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcyODY5OTE4MCwiZXhwIjoxNzI4NzAyNzgwfQ.18skrzVQTI0zbueGOWMLBP0a_3L5PMV1PKa3fYKwbkj39CG3GhXENZa0GHvsCqIMUm-aMKry3YFh0RbDBb_SPQ",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8080/api/v1/candidate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"candidate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create candidate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzZWVraWQiLCJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcyODY5OTE4MCwiZXhwIjoxNzI4NzAyNzgwfQ.18skrzVQTI0zbueGOWMLBP0a_3L5PMV1PKa3fYKwbkj39CG3GhXENZa0GHvsCqIMUm-aMKry3YFh0RbDBb_SPQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Enzo Geron\",\r\n    \"email\": \"enzo@example.com\",\r\n    \"gender\": \"masculino\",\r\n    \"expectedSalary\": \"1000\",\r\n    \"typeOfContract\": \"planilla\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/candidate",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"candidate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"user\",\r\n    \"password\":\"pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update candidate",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzZWVraWQiLCJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcyODY5OTE4MCwiZXhwIjoxNzI4NzAyNzgwfQ.18skrzVQTI0zbueGOWMLBP0a_3L5PMV1PKa3fYKwbkj39CG3GhXENZa0GHvsCqIMUm-aMKry3YFh0RbDBb_SPQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Enzo Geron Perez\",\r\n    \"email\": \"enzo@example.com\",\r\n    \"gender\": \"masculino\",\r\n    \"expectedSalary\": \"1000\",\r\n    \"typeOfContract\": \"planilla\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/candidate/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"candidate",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete candidate",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzZWVraWQiLCJzdWIiOiJ1c2VyIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTcyODY5OTE4MCwiZXhwIjoxNzI4NzAyNzgwfQ.18skrzVQTI0zbueGOWMLBP0a_3L5PMV1PKa3fYKwbkj39CG3GhXENZa0GHvsCqIMUm-aMKry3YFh0RbDBb_SPQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/v1/candidate/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"candidate",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "authenticate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"user\",\r\n    \"password\":\"pass\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/auth",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"auth"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -122,3 +122,4 @@ Your Spring Boot API should now be accessible at the default port 8080. Open you
 
 You can use the following Postman collection to test the API:
 
+[Reto-Seek.postman_collection.json](Reto-Seek.postman_collection.json)
