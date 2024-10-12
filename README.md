@@ -94,7 +94,7 @@ docker-compose up
 Clone your Spring Boot API repository to your local machine:
 
 ```bash
-git clone https://github.com/MaximilianoRodrigoSoria/candidate-api.git
+git clone https://github.com/LVSMix/candidate-api.git
 ```
 ```
 cd candidate-api
